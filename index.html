@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio Maćka Banasia — ilustracje, studia postaci, komiksy i obrazy.">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>Maciek Banaś — portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header"><a class="signature" href="./" aria-label="Maciek Banaś — strona główna">Maciek Banaś<span>Ilustracja & sztuka</span></a><a class="work-link" href="#prace">Wybrane prace <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></header>
+  <main>
+    <section id="prace" class="portfolio" aria-labelledby="gallery-title"><div class="section-heading"><h2 id="gallery-title">Wybrane prace <sup>04</sup></h2></div>
+      <div class="filters" role="group" aria-label="Kategorie prac">
+        <button type="button" class="active" data-filter="all" aria-pressed="true">Wszystkie <span>04</span></button>
+        <button type="button" data-filter="illustration" aria-pressed="false">Ilustracje <span>02</span></button>
+        <button type="button" data-filter="character" aria-pressed="false">Studia postaci <span>02</span></button>
+        <button type="button" data-filter="comic" aria-pressed="false">Komiksy <span>00</span></button>
+        <button type="button" data-filter="painting" aria-pressed="false">Obrazy <span>00</span></button>
+        <button type="button" data-filter="other" aria-pressed="false">Inne <span>00</span></button>
+      </div>
+      <p class="sr-only" id="gallery-status" role="status" aria-live="polite">Wyświetlono 4 prace.</p>
+      <div class="gallery">
+        <article class="artwork" data-category="illustration"><button class="art-image forest" data-title="Tajemnice lasu" data-category-label="Ilustracje" aria-label="Powiększ pracę Tajemnice lasu"><img src="tajemnice_lasu.jpg" alt="Akwarelowa ilustracja fantastycznych stworzeń nad leśnym stawem" width="654" height="927" fetchpriority="high"><span class="expand" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="caption"><div><h3>Tajemnice lasu</h3><p>Ilustracje</p></div><span class="art-number">01</span></div></article>
+        <article class="artwork" data-category="illustration"><button class="art-image ronja" data-title="Ronja" data-category-label="Ilustracje" aria-label="Powiększ pracę Ronja"><img src="ronja.jpg" alt="Rudowłosa dziewczynka i chłopiec na ścieżce w zielonym lesie" width="735" height="1024"><span class="expand" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="caption"><div><h3>Ronja</h3><p>Ilustracje</p></div><span class="art-number">02</span></div></article>
+        <article class="artwork" data-category="character"><button class="art-image character" data-title="Gucio — studium postaci" data-category-label="Studia postaci" aria-label="Powiększ pracę Gucio — studium postaci"><img src="gucio_studium.png" alt="Studium chłopca w czerwonej koszulce w różnych pozach i emocjach" width="1070" height="1470" loading="lazy"><span class="expand" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="caption"><div><h3>Gucio</h3><p>Studia postaci</p></div><span class="art-number">03</span></div></article>
+        <article class="artwork" data-category="character"><button class="art-image character" data-title="Chłopiec — studium postaci" data-category-label="Studia postaci" aria-label="Powiększ pracę Chłopiec — studium postaci"><img src="studium_chlopiec.jpg" alt="Akwarelowe studium chłopca w jasnej koszuli i niebieskich spodniach" width="735" height="1044" loading="lazy"><span class="expand" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="caption"><div><h3>Chłopiec</h3><p>Studia postaci</p></div><span class="art-number">04</span></div></article>
+      </div>
+      <div class="empty" hidden><h3>Brak prac w tej kategorii</h3><button type="button" id="show-all">Zobacz wszystkie prace <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button></div>
+    </section>
+  </main>
+  <footer><span>© <span id="year">2026</span> Maciek Banaś</span><a href="#" aria-label="Wróć na górę strony">Do góry ↑</a></footer>
+  <dialog class="lightbox" aria-labelledby="lightbox-title"><div class="lightbox-top"><div><h2 id="lightbox-title"></h2><p id="lightbox-category"></p></div><button class="close" aria-label="Zamknij powiększenie">Zamknij <span aria-hidden="true">×</span></button></div><div class="lightbox-stage"><button class="previous" aria-label="Poprzednia praca">←</button><img alt=""><button class="next" aria-label="Następna praca">→</button></div><p class="lightbox-hint">Użyj strzałek, aby przeglądać · Esc, aby zamknąć</p></dialog>
+</body>
+</html>
