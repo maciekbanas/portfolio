@@ -11,3 +11,6 @@
   .section-heading h2{font-size:27px}
   .filters{margin:20px 0 22px}
 }
+
+footer{margin-top:60px}
+@media(max-width:580px){footer{margin-top:40px}footer>span:nth-child(2){display:inline}}
